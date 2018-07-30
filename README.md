@@ -1,4 +1,4 @@
-# Boozer React Mini-Project
+# Boozer React Practice Code Challenge
 
 ## API Routes
 
