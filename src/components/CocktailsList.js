@@ -4,9 +4,10 @@ import Cocktail from './Cocktail'
 class CocktailsList extends Component {
   render(){
     return (
-      <div id="cocktail-list">
+      <ul id="cocktail-list">
+         {this.props.allCoctailsToDisplay.map(cocktail => <Cocktail key={cocktail.id}  cocktail={cocktail} clickHandler={this.props.clickHandler}/>)}
 
-      </div>
+      </ul>
     )
   }
 }

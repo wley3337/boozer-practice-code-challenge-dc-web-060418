@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Cocktail = (props) => {
+const Cocktail = ({cocktail, clickHandler}) => {
   return (
-    <li></li>
+    <li > <a onClick={(event) =>{clickHandler(event,cocktail)}} href={`${cocktail.name}`}> {cocktail.name} </a> </li>
   )
 }
 
